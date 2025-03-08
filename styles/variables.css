@@ -2,3 +2,20 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --nav-text-color: #ff0070;
+  --accent-color: #ff0070;
+  --header-footer-text-color: #db00ff;
+  --title-text-color: #ff0070;
+  --text-color: #000028;
+  --text-block-color: #f1b2ce;
+  --background-color: #000028;
+  --header-text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+@media (width >= 768px) {
+  :root {
+   --header-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
