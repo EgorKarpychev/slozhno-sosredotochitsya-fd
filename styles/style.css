@@ -391,19 +391,19 @@
     flex-direction: row;
   }
 
-  .text-block {
-    flex: 1;
-  }
-
   .section.full-width .block {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
+    flex-wrap: wrap;
+    gap: 20px;
   }
-  
+
   .section.full-width .text-block {
-    flex: 1 1 calc(33.333% - 20px); 
-    box-sizing: border-box; 
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+  }
+
+  .text-block {
+    flex: 1;
   }
 
   .images {
