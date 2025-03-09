@@ -5,6 +5,7 @@
 
 :root {
   --nav-text-color: #ff0070;
+  --nav-text-color-rgb: 255, 0, 112;
   --accent-color: #ff0070;
   --header-footer-text-color: #db00ff;
   --rec-color: #ff0070;

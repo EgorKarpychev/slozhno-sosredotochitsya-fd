@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --nav-text-color: #353430;
+  --nav-text-color-rgb: 53, 52, 48;
   --accent-color: #ff8dcb;
   --header-footer-text-color: #ffc2e6;
   --title-text-color: #353430;
@@ -28,6 +29,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --nav-text-color: #353430;
+    --nav-text-color-rgb: 53, 52, 48;
   --accent-color: #ff8dcb;
   --header-footer-text-color: #ffc2e6;
   --title-text-color: #353430;
