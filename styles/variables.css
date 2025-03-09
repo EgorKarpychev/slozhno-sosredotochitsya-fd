@@ -7,10 +7,13 @@
   --nav-text-color: #ff0070;
   --accent-color: #ff0070;
   --header-footer-text-color: #db00ff;
+  --rec-color: #ff0070;
   --title-text-color: #ff0070;
   --text-color: #000028;
   --text-block-color: #f1b2ce;
   --background-color: #000028;
+
+  --background-photo: url(../images/cover-image-dark.png);
   --header-text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
