@@ -294,7 +294,7 @@
 
   section.full-width .text-block {
     flex: 1 1 calc(50% - 20px); 
-  }
+}
 
   .subtitle {
     margin-block-start: 0;
