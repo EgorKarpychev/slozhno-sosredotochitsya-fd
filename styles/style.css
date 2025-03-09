@@ -10,13 +10,6 @@
   background-attachment: fixed;
 }
 
-@media (prefers-color-scheme: light) {
-.page {
-    background-color: var(--background-color);
-    background-image: url(../images/cover-image-light.png);
-  }
-}
-
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -98,7 +91,11 @@
 }
 
 .header__theme-menu-button:focus {
-  border: 1px solid var(--text-block-color);
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--nav-text-color);
 }
 
 .header__theme-menu-button_active {
@@ -154,11 +151,18 @@
 }
 
 .text-block-description a:hover {
-  border-bottom: 1px solid currentColor;
+  border-block-end: 1px solid var(--text-block-color);
 }
 
 .text-block-description a:focus {
+  outline: none;
+}
+
+.text-block-description a:focus-visible {
   border: 1px solid var(--text-block-color);
+}
+.section.full-width .text-block {
+  flex: 1 1 100%;
 }
 
 .subtitle {
@@ -191,6 +195,35 @@
   height: 100vh;
   min-height: 668px;
   padding: 10px;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-inline-end: 1px solid var(--rec-color);
+  border-block-start: 1px solid var(--rec-color);
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-inline-start: 1px solid var(--rec-color);
+  border-block-end: 1px solid var(--rec-color);
+}
+
+.footer__text {
+  color: var(--header-footer-text-color);
+  font-size: var(--header-text-size);
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0px var(--shadow-text-color);
 }
 
 @media (width >= 768px) {
@@ -231,7 +264,7 @@
   .section {
     display: grid;
     grid-template-columns: 236px 1fr;
-    grid-template-areas: "title text__block";
+    grid-template-areas: "title text-block";
     gap: 20px;
   }
 
@@ -246,7 +279,7 @@
   }
 
   .text-block {
-    grid-area: text__block;
+    grid-area: text-block;
     padding-block-start: 0;
   }
 
@@ -257,6 +290,10 @@
 
   .full-width .title {
     max-width: min-content;
+  }
+
+  section.full-width .text-block {
+    flex: 1 1 calc(50% - 20px); 
   }
 
   .subtitle {
@@ -312,7 +349,7 @@
 
   .footer__text {
     margin: 0px;
-    text-shadow: 2px 2px 0px var(--title-text-shadow-color);
+    text-shadow: 2px 2px 0px var(--shadow-text-color);
   }
 }
 
@@ -356,6 +393,18 @@
 
   .text-block {
     flex: 1;
+  }
+
+  .section.full-width .block {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+  
+  
+  .section.full-width .text-block {
+    flex: 1 1 calc(33.333% - 20px); 
+    box-sizing: border-box; 
   }
 
   .images {

@@ -11,7 +11,7 @@
   */
   --nav-text-color: #353430;
   --accent-color: #ff8dcb;
-  --header-footer-text-color: #db00ff;
+  --header-footer-text-color: #ffc2e6;
   --title-text-color: #353430;
   --text-color: #353430;
   --text-block-color: #353430;
@@ -29,12 +29,15 @@
   :root {
     --nav-text-color: #353430;
   --accent-color: #ff8dcb;
-  --title-text-color: #ffc2e6;
+  --header-footer-text-color: #ffc2e6;
+  --title-text-color: #353430;
   --text-color: #353430;
   --text-block-color: #353430;
   --background-color: #fff1f7;
   --shadow-text-color: #ff0070;
+  --rec-color: #353430;
   --background-photo: url(../images/cover-image-light.png);
+}
   }
 
   .rec {
