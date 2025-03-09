@@ -401,7 +401,6 @@
     gap: 20px; 
   }
   
-  
   .section.full-width .text-block {
     flex: 1 1 calc(33.333% - 20px); 
     box-sizing: border-box; 
