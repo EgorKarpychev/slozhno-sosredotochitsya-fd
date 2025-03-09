@@ -23,3 +23,6 @@
   --background-photo: url(../images/cover-image-dark.png);
 }
 
+  .theme-dark .rec {
+    display: flex;
+  }
